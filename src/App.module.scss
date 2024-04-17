@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body, button, input {
+  font-family: "Jura", sans-serif;
+  color: white;
+}
+
+body {
+  padding: 32px;
+  margin: 0;
+  background: #12141B;
+}
+
+#root {
+  padding: 32px;
+  height: calc(100vh - 64px);
+}
+
+.loader {
+  padding: 20px 0;
+}
+
+button {
+  background: none;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  height: calc(100vh - 132px);
+  display: grid;
+  margin: 24px 0;
+  grid-template-columns: auto 332px;
+  gap: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  overflow: scroll;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.search {
+  width: 332px;
+  height: 52px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #1E2027;
+  color: #8C8988;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.refresh {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 10px 16px;
+  color: #CF7B5A;
+}

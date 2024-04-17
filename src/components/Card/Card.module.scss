@@ -1,0 +1,105 @@
+.card {
+  position: relative;
+  box-sizing: content-box;
+  width: 290px;
+  height: 154px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #1a1c23;
+  text-align: left;
+  color: #dcd8d3;
+  border: 1px solid #1a1c23;
+  display: grid;
+  grid-template-columns: 56px auto;
+  column-gap: 16px;
+
+  &:hover,
+  &.active {
+    border: 1px solid #cf7b5a33;
+
+    .name {
+      color: #cf7b5a;
+    }
+  }
+
+  &.active {
+    .name {
+      margin-right: 20px;
+    }
+  }
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin-bottom: 4px;
+}
+
+img {
+  width: 100%;
+}
+
+.email,
+.birthday,
+.address,
+.phone {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+address {
+  font-style: normal;
+}
+.email {
+  align-self: start;
+  margin: 4px 0;
+}
+
+.email,
+.phone {
+  text-decoration: none;
+  color: #dcd8d3;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  align-self: end;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.phoneData,
+.addressData,
+.birthdayData {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #8c8988;
+  margin-top: 12px;
+}
+
+.button {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background: #4b4e5b1a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 16px;
+  border-left: 1px solid #ff2c4733;
+  border-bottom: 1px solid #ff2c4733;
+}
